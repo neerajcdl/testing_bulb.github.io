@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+body{
+    background-color: rgba(246, 244, 244, 0.555);
+}
+.container{
+    width: 100%;
+    height: 100vh;   
+}
+
+ .header h1{
+     text-align: center;
+     text-transform: uppercase;
+     letter-spacing: 2px;
+     color: #202c2d;
+text-shadow: 0 1px #808d93, -1px 0 #cdd2d5, -1px 2px #808d93, -2px 1px #cdd2d5, -2px 3px #808d93, -3px 2px #cdd2d5, -3px 4px #808d93, -4px 3px #cdd2d5, -4px 5px #808d93, -5px 4px #cdd2d5, -5px 6px #808d93, -6px 5px #cdd2d5, -6px 7px #808d93, -7px 6px #cdd2d5, -7px 8px #808d93, -8px 7px #cdd2d5;
+ }
+.content{
+    width: 700px;
+    height: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+ .content, .btn{
+    width: 700px;
+    height: 600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.btn img{
+    width: 300px;
+    height: 500px;
+ 
+}
+.btn button{
+    font-size: 20px;
+    font-weight: bold;
+    padding: 12px 10px;
+    border-radius: 25px;
+    border: none;
+    box-shadow: 3px 3px 7px -2px black;
+    transition: all 0.5s;
+}
+.btn .img1:hover{
+    color: red;
+    background-color: yellow;
+
+}
+.btn .img2:hover{
+    color: green;
+    background-color: yellow;
+
+}
+
+@media only screen and (max-width:600px) {
+  .content{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+  }
+  .btn img{
+    width: 180px;
+    height: 300px;
+}
+    .btn{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      
+   }
+ .header h1{
+     display: none;
+ }
+
+}
+
+
+
+  
+  
